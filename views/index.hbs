@@ -1,0 +1,83 @@
+<div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid content">
+      <a href="" class="navbar-brand"><img id="logo" src="#" alt="logo"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponse">
+        <ul class="navbar-nav nav-fill w-100 align-items-start">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Facilites
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="row text-center padding customrow">
+                <ul class="list-unstyled col-md-4">
+                  <li><a class="dropdown-item" href="#"><h5>COURSES</h5></a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Web</a></li>
+                  <li><a class="dropdown-item" href="#">App</a></li>
+                </ul>
+                <ul class="list-unstyled col-md-4">
+                  <li><a class="dropdown-item" href="#"><h5>JOBS</h5></a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                </ul>
+                <ul class="list-unstyled col-md-4">
+                  <li><a class="dropdown-item" href="#"><h5>RESOURCES</h5></a></li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Article</a></li>
+                  <li><a class="dropdown-item" href="#">Article</a></li>
+                </ul>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#custom-carousel">Testimony</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div id="myVideo" class="col-md-9 col-lg-9 col-sm-6">
+        <video id="videoFrame" controls autoplay name="media" __idm_id__="809780225">
+            <source id="playerSource" src="http://localhost:3000/vid/389.mp4" type="video/mp4">
+        </video>
+        
+          <button id="myButton">
+            <i class="fa fa-spinner w3-spin" style="font-size:32px"></i>
+          </button>
+      </div>
+
+      <div id="mySlider" class="col">
+          {{#each channels}}
+            <div id="{{number}}">
+                <a href="{{link}}">
+                    <img src="http://placehold.it/240x100&amp;text=channel " clas="img-fluid">
+                    <p>Channel {{number}} :-   {{name}}</p>
+                </a>
+
+            </div>
+          {{/each}}
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/javascripts/script.js"></script>
+</div>
